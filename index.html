@@ -8,37 +8,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservas.css">
 </head>
 <body>
     
     <header>
-        <a href="#footer">
+        <a href="#home">
             <!-- <img src="img/logo.png" alt="Massoterapia e estética"> -->
-             <span>Massoterapia</span>
+            <!-- <span>Massoterapia</span> -->
+            <img src="img/logo.svg" alt="Massoterapia e Estética Logo">
+
         </a>
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <h1>Hoje é dia de se cuidar!</h1>
         <h3>Transforme seu bem-estar com toques de excelência e cuidado</h3>
         <h2>"Aconchego, conforto, simpatia e alto astral"</h2>
-        <a href="#" class="btn">Saiba mais</a>
+        <a href="#sobre" class="btn">Saiba mais</a>
     </section>
     <!-- Link do WhatsApp -->
     <a href="https://wa.me/5583996110412" class="whatsapp-icon" target="_blank">
         <img src="img/WhatsApp.svg" alt="WhatsApp" />
     </a>
 
-    <section class="conheca-o-hotel">
+    <section id="sobre" class="conheca-o-hotel">
         <h3>Conheça nossos serviços</h3>
         <p>Oferecemos massagem relaxante, terapias holísticas, tratamentos faciais e corporais para revitalizar corpo e mente. Experimente um novo nível de saúde e beleza.</p>
         
@@ -75,20 +78,45 @@
         <p>Entre outros serviços</p>
     </section>
 
+    <!-- Área de Reservas -->
     <section class="newslatter">
-        <h3>Newsletter</h3>
-        <p>Assine nossa newslatter para se manter atualizado com nossos seviços e a programação de nossos eventos culturais.</p>
-
+        <h3>Reservas</h3>
+        <p>Reserve agora e descubra o poder do toque profissional. Não espere mais para cuidar de você. Faça sua reserva e sinta a diferença!</p>
         <hr>
-
-        <form>
-            <input type="text" placeholder="Email">
-            <button>Cadastrar</button>
+    </section>
+    <section id="reservas">
+        <h3>Faça sua Reserva</h3>
+        <form id="reserva-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Data da Reserva:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="service">Serviço:</label>
+            <select id="service" name="service" required>
+                <option value="massagem-relaxante">Massagem Relaxante</option>
+                <option value="massagem-terapeutica">Massagem Terapêutica</option>
+                <option value="estetica-facial">Estética Facial</option>
+                <option value="estetica-corporal">Estética Corporal</option>
+            </select>
+            
+            <button type="submit">Enviar Reserva por E-mail</button>
         </form>
+        
+        <a href="https://wa.me/5583996110412" class="whatsapp-link" target="_blank">
+            Faça sua Reserva pelo WhatsApp
+        </a>
     </section>
 
     <footer id="footer">
-        <address>
+        <address id="contato">
             <ul>
                 <li><a href="mailto:#" target="_blank"><strong>Email</strong></a></li>
                 <li><a href="#" target="_blank"><strong>Facebook</strong></a></li>
@@ -101,5 +129,6 @@
 
     </footer>
 
+    <script src="js/reservas.js"></script>
 </body>
 </html>
