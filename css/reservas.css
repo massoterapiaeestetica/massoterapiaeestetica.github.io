@@ -71,4 +71,13 @@
       max-width: 300px;
       margin: 20px auto 50px;
    }
+
+   #reserva-form input,
+   #reserva-form select {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid red;
+      background-color: red;
+      border-radius: 4px;
+   }
 }
