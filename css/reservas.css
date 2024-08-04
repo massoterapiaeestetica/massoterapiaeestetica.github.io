@@ -1,4 +1,4 @@
-#reservas {
+.reservas {
    width: 100%;
    max-width: 900px;
    padding: 20px;
@@ -7,7 +7,7 @@
    border-radius: 8px;
 }
 
-#reservas h2 {
+.reservas h2 {
    text-align: center;
    margin-bottom: 20px;
 }

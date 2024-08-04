@@ -38,7 +38,11 @@ header ul{
     display: flex;
 }
 header li a{
+    font-weight: bold;
     color: #191c03;
+}
+header li a:hover {
+    color: #a0a230;
 }
 header li{
     margin: 0 15px;

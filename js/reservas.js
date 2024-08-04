@@ -4,7 +4,7 @@ document.getElementById('reserva-form').addEventListener('submit', function(e) {
    const form = e.target;
    const formData = new FormData(form);
 
-   fetch('https://formspree.io/f/{your-form-id}', {
+   fetch('https://formspree.io/f/xnnadrqn', {
        method: 'POST',
        body: formData,
        headers: {
