@@ -33,11 +33,16 @@
     <meta name="twitter:description" content="Descubra os melhores tratamentos de massoterapia e estética para revitalizar seu corpo e mente." />
     <meta name="twitter:image" content="img/foto_perfil_cristiane.png" />
 
+    
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reservas.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reservas.css">
+    
+    <!-- EXTERNAL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
     
@@ -75,10 +80,10 @@
         <hr>
 
         <ul class="grid">
-            <li class="small" style="background-image: url('img/img_massoterapia/imagem-01.jpg');"></li>
-            <li class="large" style="background-image: url('img/img_massoterapia/imagem-02.jpg');"></li>
-            <li class="large" style="background-image: url('img/img_massoterapia/imagem-03.jpg');"></li>
-            <li class="small" style="background-image: url('img/img_massoterapia/imagem-04.jpg');"></li>
+            <li data-aos="fade-right" class="small" style="background-image: url('img/img_massoterapia/imagem-01.jpg');"></li>
+            <li data-aos="fade-left" class="large" style="background-image: url('img/img_massoterapia/imagem-02.jpg');"></li>
+            <li data-aos="fade-right" class="large" style="background-image: url('img/img_massoterapia/imagem-03.jpg');"></li>
+            <li data-aos="fade-left" class="small" style="background-image: url('img/img_massoterapia/imagem-04.jpg');"></li>
         </ul>
     </section>
 
@@ -89,20 +94,20 @@
         <hr>
 
         <ul class="grid">
-            <li>
+            <li data-aos="fade-up-right">
                 <h4>Massagem Relaxante</h4>
                 <p>A Massagem Relaxante é uma técnica terapêutica voltada para o alívio do estresse e das tensões acumuladas no dia a dia.</p>
             </li>
-            <li>
+            <li data-aos="fade-up">
                 <h4>Aromaterapia</h4>
                 <p>A Aromaterapia é uma prática terapêutica que utiliza óleos essenciais extraídos de plantas para promover o bem-estar físico e emocional.</p>
             </li>
-            <li>
+            <li data-aos="fade-up-left">
                 <h4>Massagem Desportiva</h4>
                 <p>A Massagem Desportiva é uma técnica especializada voltada para atletas e pessoas fisicamente ativas, com o objetivo de prevenir e tratar lesões, além de melhorar o desempenho esportivo.</p>
             </li>
         </ul>
-        <p>Entre outros serviços</p>
+        <p data-aos="fade-down">Entre outros serviços</p>
     </section>
 
     <!-- Área de Reservas -->
@@ -111,7 +116,7 @@
         <p>Reserve agora e descubra o poder do toque profissional. Não espere mais para cuidar de você. Faça sua reserva e sinta a diferença!</p>
         <hr>
     </div>
-    <section class="reservas">
+    <section class="reservas" data-aos="zoom-in-up">
         <h3>Faça sua Reserva</h3>
         <form id="reserva-form">
             <label for="name">Nome:</label>
@@ -147,7 +152,7 @@
     <footer id="footer">
         <address id="contato">
             <ul>
-                <li><a href="mailto:#" target="_blank"><strong>Email</strong></a></li>
+                <li><a href="mailto:contato.massoterapiacristiane@gmail.com" target="_blank"><strong>Email</strong></a></li>
                 <li><a href="https://wa.me/5583996110412" target="_blank"><strong>WhatsApp</strong></a></li>
                 <li><a href="https://www.instagram.com/massoterapia_e_estetic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><strong>Instagram</strong></a></li>
             </ul>
@@ -155,9 +160,12 @@
 
         <p class="creditos">Todos os direitos reservados - Massoterapeuta Cristiane - 2024</p>
         <p class="creditos">Desenvolvido por <a href="https://genilsoncavalcante.github.io" target="_blank" title="Portifólio do Desenvolvedor">Genilson Cavalcante</a></p>
-
     </footer>
 
     <script src="js/reservas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

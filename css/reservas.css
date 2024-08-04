@@ -5,6 +5,9 @@
    background-color: #f9f9f9;
    margin: 20px auto 80px;
    border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .reservas h2 {
@@ -24,10 +27,13 @@
 
 #reserva-form input,
 #reserva-form select {
-   width: 100px;
+   width: 700px;
    padding: 10px;
    border: 1px solid #ccc;
    border-radius: 4px;
+}
+.service {
+   width: 60px;
 }
 
 #reserva-form button {
@@ -76,8 +82,7 @@
    #reserva-form select {
       width: 90%;
       padding: 10px;
-      border: 1px solid red;
-      background-color: red;
+      border: 1px solid #ccc;
       border-radius: 4px;
    }
 }

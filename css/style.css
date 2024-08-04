@@ -23,6 +23,7 @@ a:hover{
 header{
     width: 100%;
     position: fixed;
+    opacity: 0.9;
     top: 0;
     left: 0;
     display: flex;
@@ -30,6 +31,7 @@ header{
     align-items: center;
     padding: 20px 50px;
     background-color: #fff;
+    z-index: 999;
 }
 header img{
     width: 200px;
