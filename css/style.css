@@ -239,7 +239,7 @@ div.reservas-text h3{
     text-align: center;
 }
 div.reservas-text p{
-    max-width: 800px;
+    max-width: 700px;
     margin-bottom: 35px;
     color: #a0a230;
     text-align: center;
@@ -257,7 +257,7 @@ div.reservas-text form{
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 @media (max-width: 700px){
