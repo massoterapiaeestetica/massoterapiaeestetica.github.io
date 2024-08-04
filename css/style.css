@@ -110,7 +110,6 @@ header li:last-child{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
   
-
 @media (max-width: 700px){
     .hero h1{
         font-size: 2.5rem;
@@ -121,38 +120,38 @@ header li:last-child{
 }
 
 
-/*CONHEÇA O HOTEL*/
-section.conheca-o-hotel{
+/*CONHEÇA OS SERVIÇOS*/
+section.conheca-o-servico{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 50px;
 }
-section.conheca-o-hotel h3{
+section.conheca-o-servico h3{
     font-size: 2rem;
     margin-bottom: 35px;
     color: #191c03;
     text-align: center;
 }
-section.conheca-o-hotel p{
+section.conheca-o-servico p{
     max-width: 800px;
     margin-bottom: 35px;
     color: #191c03;
     text-align: center;
 }
-section.conheca-o-hotel hr{
+section.conheca-o-servico hr{
     width: 200px;
     height: 2px;
     background-color: #191c03;
     margin-bottom: 70px;
     border: none;
 }
-section.conheca-o-hotel .grid{
+section.conheca-o-servico .grid{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-section.conheca-o-hotel .grid li{
+section.conheca-o-servico .grid li{
     height: 350px;
     padding: 20px;
     border-radius: 4px;
@@ -160,95 +159,95 @@ section.conheca-o-hotel .grid li{
     background-size: cover;
     background-position: center;
 }
-section.conheca-o-hotel .grid li.small {
+section.conheca-o-servico .grid li.small {
     flex-basis: 30%;
 }
-section.conheca-o-hotel .grid li.large {
+section.conheca-o-servico .grid li.large {
     flex-basis: 60%;
 }
 @media (max-width: 700px){
-    section.conheca-o-hotel .grid li.small, section.conheca-o-hotel .grid li.large{
+    section.conheca-o-servico .grid li.small, section.conheca-o-servico .grid li.large{
         flex-basis: 100%;
     }
 }
 
 
-/* CARACTERÍSTICAS */
-section.caracteristicas{
+/* DESTAQUES */
+section.destaques{
     background-color: #191c03;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 50px;
 }
-section.caracteristicas h3{
+section.destaques h3{
     font-size: 2rem;
     margin-bottom: 35px;
     color: #fff;
     text-align: center;
 }
-section.caracteristicas p{
+section.destaques p{
     max-width: 800px;
     margin-bottom: 35px;
     color: #fff;
     text-align: center;
 }
-section.caracteristicas hr{
+section.destaques hr{
     width: 200px;
     height: 2px;
     background-color: #fff;
     margin-bottom: 70px;
     border: none;
 }
-section.caracteristicas .grid{
+section.destaques .grid{
     width: 100%;
     display: flex;
 }
-section.caracteristicas .grid li{
+section.destaques .grid li{
     padding: 0 30px;
     text-align: center;
 }
-section.caracteristicas .grid li h4{
+section.destaques .grid li h4{
     font-size: 1.5rem;
     color: #c3c63b;
     margin-bottom: 30px;
 }
-section.caracteristicas .grid li p{
+section.destaques .grid li p{
     color: #fff;
 }
 @media (max-width: 850px){
-    section.caracteristicas .grid{
+    section.destaques .grid{
         flex-direction: column;
     }
 }
 
 
-.newslatter{
+.reservas-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 50px;
 }
-section.newslatter h3{
+div.reservas-text h3{
     font-size: 2rem;
     margin-bottom: 35px;
     color: #c3c63b;
     text-align: center;
 }
-section.newslatter p{
+div.reservas-text p{
     max-width: 800px;
     margin-bottom: 35px;
     color: #a0a230;
     text-align: center;
 }
-section.newslatter hr{
+div.reservas-text hr{
     width: 200px;
     height: 2px;
     background-color: #c3c63b;
     margin-bottom: 10px;
     border: none;
 }
-section.newslatter form{
+div.reservas-text form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,9 +256,8 @@ section.newslatter form{
     max-width: 800px;
 }
 
-
 @media (max-width: 700px){
-    section.newslatter input{
+    div.reservas-text input{
         flex-basis: 100%;
         margin-bottom: 15px;
     }
